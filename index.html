@@ -2,6 +2,7 @@
 
 
 
+
 <!doctype html>
 <html lang="nl">
 
@@ -59,6 +60,12 @@ border: 1px solid #fff;
                 <li class="nav-item mr-3 ">
                     <a class="nav-link link-black" href="https://DuckMC.github.io/videos/">Content</a>
                 </li>
+                <li class="nav-item mr-3 ">
+                    <a class="nav-link link-black" href="https://DuckMC.github.io/speedruns/">Speedruns</a>
+                </li>
+                <li class="nav-item mr-3 ">
+                    <a class="nav-link link-black" href="https://DuckMC.github.io/cps/">CPS Tester</a>
+                </li>
                 <li class="nav-item mr-3 1">
                     <a class="nav-link link-black" href="https://DuckMC.github.io/contact/">Contact</a>
                 </li>
@@ -98,7 +105,7 @@ border: 1px solid #fff;
         <a class="navbar-brand" href="http://www.duckmc.eu">
                             <a href="https://instagram.com/duckmc.eu" target="_blank"><i class="fab fa-instagram fa-2x mr-2 link-white"></i></a>
                             <a href="https://www.youtube.com/channel/UC-Bp5cB_PuQpTHLvhCZhqLA" target="_blank"><i class="fab fa-youtube fa-2x mr-2 link-white"></i></a>
-                            <a href="https://DuckMC.github.io/play/" target="_blank"><i class="fas fa-gamepad fa-2x mr-2 link-white"></i></a>
+                            <a href="https://DuckMC.github.io/play/"><i class="fas fa-gamepad fa-2x mr-2 link-white"></i></a>
         </a>
         <button class="navbar-toggler toggle-nav" type="button" id="toggle-nav">
             <span class="navbar-toggler-icon"></span>
@@ -109,10 +116,16 @@ border: 1px solid #fff;
                     <a class="nav-link" href="https://DuckMC.github.io/home/">Home</a>
                 </li>
                 <li class="nav-item mr-3 ">
-                    <a class="nav-link" href="https://DuckMC.github.io/games/">Games</a>
+                    <a class="nav-link" href="https://DuckMC.github.io/minigames/">Games</a>
                 </li>
                 <li class="nav-item mr-3 ">
                     <a class="nav-link" href="https://DuckMC.github.io/videos/">Content</a>
+                </li>
+                <li class="nav-item mr-3 ">
+                    <a class="nav-link" href="https://DuckMC.github.io/speedruns/">Speedruns</a>
+                </li>
+                <li class="nav-item mr-3 ">
+                    <a class="nav-link" href="https://DuckMC.github.io/cps/">CPS Tester</a>
                 </li>
                 <li class="nav-item mr-3 1">
                     <a class="nav-link" href="https://DuckMC.github.io/contact/">Contact</a>
@@ -256,7 +269,7 @@ function AdvancedCopy(){
 }());
 
 /*
-	Ripple - jQuery
+    Ripple - jQuery
 ---------------------------*/
 $(".ripple-btn").click(function(a){var i=$(this);0==i.find(".material-ink").length&&i.prepend("<div class='material-ink'></div>");var t=i.find(".material-ink");if(t.removeClass("animate"),!t.height()&&!t.width()){var e=Math.max(i.outerWidth(),i.outerHeight());t.css({height:e,width:e})}var r=a.pageX-i.offset().left-t.width()/2,h=a.pageY-i.offset().top-t.height()/2,l=i.data("ripple-color");t.css({top:h+"px",left:r+"px",background:l}).addClass("animate")});
 </script>
@@ -265,22 +278,22 @@ $(".ripple-btn").click(function(a){var i=$(this);0==i.find(".material-ink").leng
 (function ($) {
  "use strict";
 
-	/*
-	STICKY
-	================================== */
-	var WinD = $(window);
-	WinD.on('scroll',function() {
-		var AcSticky = $('#active-sticky');
-		var scroll = $(window).scrollTop();
-		var AESticky = AcSticky;
-		if (scroll < 245) {
-			AESticky.removeClass("is-sticky , gradient-1");
-		}
-		else{
-			AESticky.addClass("is-sticky , gradient-1");
-		}
-		return false;
-	});
+    /*
+    STICKY
+    ================================== */
+    var WinD = $(window);
+    WinD.on('scroll',function() {
+        var AcSticky = $('#active-sticky');
+        var scroll = $(window).scrollTop();
+        var AESticky = AcSticky;
+        if (scroll < 245) {
+            AESticky.removeClass("is-sticky , gradient-1");
+        }
+        else{
+            AESticky.addClass("is-sticky , gradient-1");
+        }
+        return false;
+    });
 
 })(jQuery);
 </script>
